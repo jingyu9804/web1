@@ -3,30 +3,90 @@
 <head>
   <title>Home Page-1</title>
   <meta charset="utf-8">
+  <style>
+    body{
+      margin: 0;
+    }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 45px;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    ol {
+      border-right: 1px solid gray;
+      width: 130px;
+      margin:0;
+      padding: 20px;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+    }
+    #grid ol{
+      padding-left: 32px;
+    }
+    #grid #article{
+      padding-left: 25px;
+    }
+    @media(max-width:800px) {
+      #grid {
+        display: block;
+      }
+      ol {
+        border-right: none;
+      }
+      h1 {
+        border-bottom: none;
+      }
+    }
+  </style>
 </head>
 <body>
 
   <h1><a href="1.html" target="_blank" title="billboard">billboard</a></h1>
-  <a href="https://blog.naver.com/PostView.naver?blogId=raintaro&logNo=222482428235" target="_blank" title="lyrics">가사 의미 해석</a>
 
+  <!--
+  <a href="https://blog.naver.com/PostView.naver?blogId=raintaro&logNo=222482428235" target="_blank" title="lyrics">가사 의미 해석</a>
+-->
+  <div id="grid">
+    <ol>
+      <li><a href="https://www.youtube.com/watch?v=xUhjyZ53cz0" target="_blank" title="abcdefu 동영상">abcdefu 동영상</a></li>
+      <li><a href="https://www.youtube.com/watch?v=qvu4nPMyl3U" target="_blank" title="SAVAGE LOVE" >SAVAGE LOVE</a></li>
+      <li><a href="https://www.youtube.com/watch?v=nhRUyVMkaNI" target="_blank" title="GUCCI">GUCCI</a></li>
+    </ol>
+
+  <!--
   <ol>
     <li><a href="https://www.youtube.com/watch?v=xUhjyZ53cz0" target="_blank" title="abcdefu 동영상">abcdefu 동영상</a></li>
     <li><a href="https://www.youtube.com/watch?v=qvu4nPMyl3U" target="_blank" title="SAVAGE LOVE">SAVAGE LOVE</a></li>
     <li><a href="https://www.youtube.com/watch?v=nhRUyVMkaNI" target="_blank" title="GUCCI">GUCCI</a></li>
   </ol>
+-->
+    <div id="article">
+      <h2>abcdefu 동영상</h2>
 
-  <p>
-    I swear I meant to mean the best when it ended.
-    Even tried to bite my tongue when you start shit.
-    Now you're textin' all my friends asking questions.
-  </p>
-  <img src="7732.png" alt="swiss image">
-  <p style="margin-top:45px;">
-    <strong>They never even <u>liked you</u> in the first place.</strong>
-    Dated a girl that I hate for the attention.
-    She only made it two days, what a connection.
-    It's like you'd do anything for my affection.
-    You're goin' all about it in the worst ways.
-  </p>
+      <p><iframe src="https://www.youtube.com/watch?v=xUhjyZ53cz0" width="560" height="315"></iframe></p>
+
+      <p>
+        I swear I meant to mean the best when it ended.
+        Even tried to bite my tongue when you start shit.
+        Now you're textin' all my friends asking questions.
+      </p>
+      <img src="7732.png" alt="swiss image">
+      <p style="margin-top:45px;">
+        <strong>They never even <u>liked you</u> in the first place.</strong>
+        Dated a girl that I hate for the attention.
+        She only made it two days, what a connection.
+        It's like you'd do anything for my affection.
+        You're goin' all about it in the worst ways.
+      </p>
+      </div>
+    </div>
   </body>
 </html>
